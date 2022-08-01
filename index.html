@@ -13,6 +13,9 @@
         <!-- animate.css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <!-- end -->
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- end -->
         <!-- stylesheet -->
         <link rel="stylesheet" href="style.css">
         <!-- end -->
@@ -32,12 +35,12 @@
                     <div class='menu-button'></div>
                 </label>
                 <ul class="menu">
-                    <li><a href="#">Us</a></li>
-                    <li><a href="#">Offices</a></li>
-                    <li><a href="#">Our advantages</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Our edge</a></li>
                     <li><a href="#">Products</a></li>
-                    <li><a href="#">Quality control</a></li>
-                    <li><a href="#">Historical clients</a></li>
+                    <li><a href="#">Quality Control</a></li>
+                    <li><a href="#">Our clients</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </section>
@@ -45,8 +48,8 @@
 
             <!-- background -->
             <div class="background">
-                <img src="resources/images/background.jpg" class="horizontal-bg-img">
-                <img src="resources/images/background-vertical.jpg" class="vertical-bg-img">
+                <img src="resources/images/background.jpg" class="background-img-horizontal">
+                <img src="resources/images/background-vertical.jpg" class="background-img-vertical">
                 <div class="overlay">
                     <h1>Take Control of Your Supply Chain</h1>
                     <h1 style="color: var(--yellow); margin-top: -5vw;">___</h1>
@@ -64,7 +67,40 @@
             <!-- end -->
         </div>
         <!-- end -->
+
+        <!-- contents -->
+        <div class="container">
+            <!-- about us -->
+            <div class="about-us">
+                <div class="about-us-img">
+                    <img src="resources/images/about-us-img-vertical.jpg" alt="" class="about-us-img-vertical">
+                    <img src="resources/images/about-us-img-horizontal.jpg" alt="" class="about-us-img-horizontal">
+                </div>
+                <div class="about-us-text">
+                    <h3>ABOUT US</h3>
+                    <h1>Our company<span>.</span></h1>
+                    <p>Capricorn began its operations more than 50 years ago. Today it has offices in Chile, Colombia,
+                        China, Pakistan and Peru; plus the United States and Vietnam with opening in 2021. We also
+                        supply the markets of Uruguay, Colombia, Brazil, Central America, USA and Spain. We work on
+                        different lines such as: chemicals, steels, plastics, construction, the electrical sector,
+                        textiles, food, among others.
+
+                        Our objective is to generate medium and long-term strategic alliances with our clients, in order
+                        to achieve common goals. With this in mind, we have set up offices in China and trained our
+                        staff based in Asia and South America. The efforts made have paid off since we have become the
+                        best sales alternative for Chinese companies in Latin America.</p>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- end -->
     </body>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- end -->
     <script src="index.js"></script>
 
 </html>

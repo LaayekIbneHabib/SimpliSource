@@ -11,6 +11,7 @@ body {
     --yellow: #f4bd49;
     --maroon: #502721;
     --white: #ffffff;
+    --grey: #5e5e5e;
 }
 
 /* disable element selection */
@@ -145,12 +146,12 @@ body {
     animation-duration: 4s;
 }
 
-.horizontal-bg-img {
+.background-img-horizontal {
     width: 100%;
-    filter: brightness(.2);
+    filter: brightness(.4);
 }
 
-.vertical-bg-img {
+.background-img-vertical {
     display: none;
 }
 
@@ -246,26 +247,62 @@ body {
 
 /* end */
 
+/* contents */
+.container {
+    display: block;
+    margin: auto;
+    width: 90%;
+    /* background-color: aqua; */
+}
+
+/* about us */
+.about-us {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about-us-img-vertical {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.about-us-img-horizontal {
+    display: none;
+}
+
+.about-us-text {
+    /* background-color: red; */
+    width: 500px;
+    text-align: left;
+    float: right;
+    margin-top: -575px;
+}
+
+.about-us-text h3 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+.about-us-text h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 50px;
+}
+
+.about-us-text h1 span {
+    color: var(--yellow);
+}
+
+.about-us-text p {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/* end */
 /* end */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* end */
 
 /* media queries */
 @media (max-width: 1100px) {
@@ -318,12 +355,62 @@ body {
     }
 }
 
-@media(max-width: 700px) {
-    .horizontal-bg-img {
+@media(max-width: 1050px) {
+    .container {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .about-us {
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .about-us-img-vertical {
         display: none;
     }
 
-    .vertical-bg-img {
+    .about-us-img-horizontal {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .about-us-text {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .about-us-text h3 {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 20px;
+        color: var(--yellow);
+    }
+
+    .about-us-text h1 {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 50px;
+    }
+
+    .about-us-text h1 span {
+        color: var(--yellow);
+    }
+
+    .about-us-text p {
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .background-img-horizontal {
+        display: none;
+    }
+
+    .background-img-vertical {
         display: block;
         width: 100%;
         filter: brightness(.2);
