@@ -533,7 +533,7 @@ hr {
     .list-items {
         position: absolute;
         width: 250px;
-        margin-top: -1863px;
+        margin-top: -1870px;
         margin-left: 120px;
     }
 
@@ -546,7 +546,7 @@ hr {
     .two {
         position: absolute;
         width: 250px;
-        margin-top: -450px;
+        margin-top: -455px;
         margin-left: 120px;
     }
 
@@ -591,7 +591,7 @@ hr {
     }
 }
 
-@media(max-width: 411px) {
+@media(max-width: 500px) {
     .background-img-vertical {
         height: 620px;
     }
