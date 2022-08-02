@@ -352,6 +352,14 @@ hr {
     display: inline-block;
 }
 
+.chain-list span img {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 20px;
+    z-index: 99;
+    width: 50px;
+}
+
 .chain-list div:nth-child(1) {
     width: 100px;
 }
@@ -523,39 +531,73 @@ hr {
 
 @media(max-width: 1000px) {
     .chain-list span {
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
         background-color: var(--light-black);
         border-radius: 50%;
         display: inline-block;
     }
 
+    .chain-list hr {
+        position: absolute;
+        transform: rotate(90deg);
+        margin-top: -125px;
+        margin-left: -149px;
+        background-color: var(--light-black);
+        height: 1px;
+        width: 350px;
+    }
+
+    .chain-list span img {
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 8px;
+        z-index: 99;
+        width: 30px;
+    }
+
     .list-items {
         position: absolute;
         width: 250px;
-        margin-top: -1870px;
-        margin-left: 120px;
+        margin-top: -1642px;
+        margin-left: 80px;
+    }
+
+    .list-items div:nth-child(2) {
+        margin-top: 163px;
+    }
+
+    .list-items div:nth-child(3) {
+        margin-top: 107px;
+    }
+
+    .list-items div:nth-child(4) {
+        margin-top: 128px;
     }
 
     .chain-list div:nth-child(2) {
         position: absolute;
         width: 100px;
-        margin-top: -354px;
+        margin-top: -304px;
     }
 
     .two {
         position: absolute;
         width: 250px;
         margin-top: -455px;
-        margin-left: 120px;
+        margin-left: 80px;
+    }
+
+    .two div:nth-child(1) {
+        margin-top: 54px;
     }
 
     .two div:nth-child(2) {
-        margin-top: 70px;
+        margin-top: -6px;
     }
 
     .two div:nth-child(3) {
-        margin-top: 80px;
+        margin-top: 32px;
     }
 }
 
@@ -589,47 +631,6 @@ hr {
         line-height: 7vw;
         font-size: 2.5vw;
     }
-}
-
-@media(max-width: 500px) {
-    .background-img-vertical {
-        height: 620px;
-    }
-}
-
-@media(max-width: 400px) {
-    .list-items {
-        width: 62vw;
-    }
-
-    .list-items h2 {
-        font-size: 7vw;
-    }
-
-    .list-items p {
-        font-size: 4vw;
-    }
-
-    .list-items div:nth-child(2) {
-        margin-top: 220px;
-    }
-
-    .list-items div:nth-child(3) {
-        margin-top: 170px;
-    }
-
-    .list-items div:nth-child(4) {
-        margin-top: 185px;
-    }
-
-    .two div:nth-child(2) {
-        margin-top: 90px;
-    }
-
-    .two div:nth-child(3) {
-        margin-top: 70px;
-    }
-
 }
 
 /* end */
