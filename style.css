@@ -12,7 +12,7 @@ body {
     --yellow: #f4bd49;
     --maroon: #502721;
     --white: #ffffff;
-    --grey: #5e5e5e;
+    --grey: #ffffff80;
 }
 
 /* disable element selection */
@@ -619,9 +619,225 @@ form input::placeholder {
 }
 
 /* end */
+
+/* footer */
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #151414;
+    height: 500px;
+    width: 100%;
+    margin-top: 400px;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.footer .card {
+    background-color: #202020;
+    width: 359px;
+    height: 412px;
+    margin-top: -50px;
+    margin-left: 80px;
+}
+
+.footer .card .footer-logo {
+    width: 280px;
+    display: block;
+    margin: auto;
+    padding-top: 90px;
+    text-align: center;
+    font-size: 54px;
+    color: var(--white);
+}
+
+.footer .card p {
+    color: #5b5b5b;
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.social {
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+}
+
+.social h1 {
+    color: white;
+    font-size: 22px;
+}
+
+.social ul {
+    margin-top: 20px;
+    margin-left: -50px;
+}
+
+.social ul li {
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.our-services {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -200px;
+}
+
+.our-services h1 {
+    color: white;
+    font-size: 26px;
+}
+
+.our-services ul {
+    position: relative;
+}
+
+.our-services ul li {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.our-services ul li a {
+    color: #878787;
+    font-family: 'Maven Pro', sans-serif;
+    transition: 0.1s linear;
+    text-decoration: none;
+}
+
+.our-services ul li a:hover {
+    color: white;
+}
+
+.other-links {
+    position: absolute;
+    margin-left: 900px;
+    margin-top: -200px;
+}
+
+.other-links h1 {
+    color: white;
+    font-size: 26px;
+}
+
+.other-links ul {
+    position: relative;
+}
+
+.other-links ul li {
+    padding-top: 10px;
+    list-style-type: none;
+}
+
+.other-links ul li a {
+    color: #878787;
+    font-family: 'Maven Pro', sans-serif;
+    transition: 0.1s linear;
+    text-decoration: none;
+}
+
+.other-links ul li a:hover {
+    color: white;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.copyright {
+    background-color: #202020;
+    width: 100%;
+    height: 80px;
+    margin-top: 60px;
+}
+
+.copyright p {
+    color: #878787;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 26px;
+}
+
+.copyright p a {
+    color: #878787;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 26px;
+    transition: 0.1s linear;
+    text-decoration: none;
+}
+
+.copyright p a:hover {
+    color: white;
+}
+
 /* end */
 
 /* media queries */
+@media (min-width: 1281px) {
+    .footer-container {
+        margin-left: 200px;
+    }
+}
+
+@media(max-width: 1190px) {
+    .footer {
+        position: absolute;
+        background-color: #151414;
+        height: 1200px;
+        width: 100%;
+        margin-top: 600px;
+    }
+
+    .footer .card {
+        margin: auto;
+        background-color: #202020;
+        width: 359px;
+        height: 412px;
+        margin-top: -50px;
+    }
+
+    .our-services {
+        position: absolute;
+        margin-left: 95px;
+        margin-top: 160px;
+        text-align: center;
+    }
+
+    .our-services ul {
+        margin-right: 40px;
+    }
+
+    .other-links {
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 500px;
+        text-align: center;
+    }
+
+    .other-links ul {
+        margin-right: 40px;
+    }
+
+    .copyright {
+        background-color: #202020;
+        width: 100%;
+        height: 80px;
+        margin-top: 760px;
+    }
+
+    .copyright p {
+        color: #878787;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: lighter;
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
 @media (max-width: 1100px) {
     .menu-button-container {
         display: flex;
