@@ -691,7 +691,7 @@ form input::placeholder {
     margin: auto;
     padding-top: 90px;
     text-align: center;
-    font-size: 54px;
+    font-size: 45px;
     color: var(--white);
 }
 
@@ -1131,7 +1131,7 @@ form input::placeholder {
         position: relative;
         display: block;
         margin: auto;
-        height: 500px;
+        height: 850px;
         width: 330px;
         text-align: left;
         border-radius: 20px;
@@ -1144,7 +1144,7 @@ form input::placeholder {
     form {
         position: absolute;
         text-align: left;
-        top: 42%;
+        top: 67%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin-bottom: 100px;
@@ -1171,7 +1171,35 @@ form input::placeholder {
     }
 
     .address {
-        display: none;
+        position: absolute;
+        top: 5%;
+        margin-left: 35px;
+    }
+
+    .address p {
+        font-family: 'Maven Pro', sans-serif;
+        color: var(--white);
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 20px;
+        text-shadow: 2px 2px 6px var(--dark-black);
+    }
+
+    .address p a {
+        font-family: 'Maven Pro', sans-serif;
+        color: var(--white);
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 20px;
+        text-shadow: 2px 2px 6px var(--dark-black);
+    }
+
+    .address img {
+        width: 4vw;
+        width: 25px;
+        text-shadow: 2px 2px 6px var(--dark-black);
     }
 }
 
