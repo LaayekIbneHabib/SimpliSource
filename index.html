@@ -10,9 +10,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
         <!-- end -->
-        <!-- animate.css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <!-- end -->
         <!-- aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- end -->
@@ -24,7 +21,7 @@
 
     <body>
         <!-- header -->
-        <div class="header">
+        <div class="header" id="header" data-aos="fade-down">
             <!-- navbar -->
             <section class="top-nav">
                 <div>
@@ -71,13 +68,13 @@
         <div class="contents">
             <!-- about us -->
             <div class="about-us" id="about-us">
-                <div class="about-us-img">
+                <div class="about-us-img" data-aos="fade-right">
                     <img src="resources/images/about-us-img-vertical.jpg" alt="" class="about-us-img-vertical">
                     <img src="resources/images/about-us-img-horizontal.jpg" alt="" class="about-us-img-horizontal">
                 </div>
-                <div class="about-us-text">
+                <div class="about-us-text" data-aos="fade-left">
                     <h3>ABOUT US</h3>
-                    <h1>Our company<span>.</span></h1>
+                    <h1>Our company</h1>
                     <p>Kanatel began its operations more than 50 years ago. Today it has offices in Chile, Colombia,
                         China, Pakistan and Peru; plus the United States and Vietnam with opening in 2021. We also
                         supply the markets of Uruguay, Colombia, Brazil, Central America, USA and Spain. We work on
@@ -91,49 +88,61 @@
                 </div>
             </div>
             <!-- end -->
-            <hr>
+            <hr data-aos="slide-left">
             <!-- our edge -->
             <div class="our-edge" id="our-edge">
-                <h1>Our edge<span>.</span></h1>
+                <h1 data-aos="fade-down">Our edge</h1>
                 <div class="chain-list">
                     <div>
-                        <span>
-                            <img src="resources/icons/weight.png" alt="">
-                        </span>
+                        <div data-aos="fade-down">
+                            <span>
+                                <img src="resources/icons/weight.png" alt="">
+                            </span>
+                        </div>
                         <hr>
-                        <span>
-                            <img src="resources/icons/confrontation.png" alt="">
-                        </span>
+                        <div data-aos="fade-down">
+                            <span>
+                                <img src="resources/icons/confrontation.png" alt="">
+                            </span>
+                        </div>
                         <hr>
-                        <span>
-                            <img src="resources/icons/diagram.png" alt="">
-                        </span>
-                        <hr>
+                        <div data-aos="fade-down">
+                            <span>
+                                <img src="resources/icons/portfolio.png" alt="">
+                            </span>
+                        </div>
+                        <!-- <hr>
                         <span>
                             <img src="resources/icons/portfolio.png" alt="">
                         </span>
                         <hr>
-                        <span></span>
+                        <span></span> -->
                     </div>
 
                     <div>
-                        <span>
-                            <img src="resources/icons/info.png" alt="">
-                        </span>
+                        <div data-aos="fade-down">
+                            <span>
+                                <img src="resources/icons/info.png" alt="">
+                            </span>
+                        </div>
                         <hr>
-                        <span>
-                            <img src="resources/icons/quality.png" alt="">
-                        </span>
+                        <div data-aos="fade-down">
+                            <span>
+                                <img src="resources/icons/badge.png" alt="">
+                            </span>
+                        </div>
                         <hr>
-                        <span>
-                            <img src="resources/icons/secure.png" alt="">
-                        </span>
-                        <hr>
-                        <span></span>
+                        <div data-aos="fade-down">
+                            <span>
+                                <img src="resources/icons/secure.png" alt="">
+                            </span>
+                        </div>
+                        <!-- <hr>
+                        <span></span> -->
                     </div>
                 </div>
 
-                <div class="list-items">
+                <div class="list-items" data-aos="fade-right">
                     <div>
                         <h2>Large volumes</h2>
                         <p>We are one of the largest commercial agents of Eastern products in all of Latin America.</p>
@@ -144,180 +153,191 @@
                             products. Better prices, better delivery times, agility in service and communication.</p>
                     </div>
                     <div>
-                        <h2>Increase</h2>
-                        <p>Both Capricorn and its clients have grown steadily over time, thanks to the rapid adaptation
-                            of our structures in different countries.</p>
-                    </div>
-                    <div>
                         <h2>Experience</h2>
                         <p>Our great experience in China and the East, where we have been since 1990, in addition to
                             the great variety of products and lines that we operate, gives us a great advantage for the
                             benefit of our clients. We have solved so many difficult situations that today allow us to
                             have the conditions for business to flow constantly.</p>
                     </div>
+                    <!-- <div>
+                        <h2>Experience</h2>
+                        <p>Our great experience in China and the East, where we have been since 1990, in addition to
+                            the great variety of products and lines that we operate, gives us a great advantage for the
+                            benefit of our clients. We have solved so many difficult situations that today allow us to
+                            have the conditions for business to flow constantly.</p>
+                    </div> -->
                 </div>
 
-                <div class="list-items two">
+                <div class="list-items two" data-aos="fade-left">
                     <div>
                         <h2>Market information</h2>
                         <p>We continuously help our clients to always be at the forefront of their competitors. Our
                             staff in the East periodically attends the different specialized fairs where they take
-                            advantage of constantly verifying suppliers, prices and market situation for each particular
+                            advantage of constantly verifying suppliers, prices and market situation for each
+                            particular
                             industry.</p>
                     </div>
                     <div>
                         <h2>Quality control</h2>
-                        <p>Our technical staff has visited countless factories and industries, making exhaustive quality
-                            controls to certify them as well as verifying references of important clients of the same.
-                            On many occasions, our clients' technicians visit the factories together with ours in order
+                        <p>Our technical staff has visited countless factories and industries, making exhaustive
+                            quality
+                            controls to certify them as well as verifying references of important clients of the
+                            same.
+                            On many occasions, our clients' technicians visit the factories together with ours in
+                            order
                             to meet the critical factors required in the supplies.</p>
                     </div>
-                    <div>
+                    <div class="hidden">
                         <h2>Confidentiality</h2>
                         <p>All information received is handled with strict confidentiality, which has allowed us to
-                            maintain business for many years with our clients who value our work and service over time.
+                            maintain business for many years with our clients who value our work and service over
+                            time.
                         </p>
                     </div>
                 </div>
             </div>
             <!-- end -->
-            <hr>
+            <hr style="height: 1.5px;" data-aos="slide-right">
             <!-- products -->
             <div class="products" id="products">
-                <h1>Our Products<span>.</span></h1>
-                <div class="pro duct-1">
-                    <img src="resources/images/0quimicos.png" alt="">
+                <h1 data-aos="fade-down">Our products</h1>
+                <div class="pro duct-1" data-aos="fade-right">
                     <h2>Chemicals</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/chemistry.png" alt="">
                 </div>
-                <div class="pro duct-2">
-                    <img src="resources/images/acero.png" alt="">
+                <div class="pro duct-2" data-aos="fade-right">
                     <h2>Steel</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/crucible.png" alt="">
                 </div>
-                <div class="pro duct-3">
-                    <img src="resources/images/agric.png" alt="">
+                <div class="pro duct-3" data-aos="fade-left">
                     <h2>Farming</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/sprout.png" alt="">
                 </div>
-                <div class="pro duct-4">
-                    <img src="resources/images/alimentos.png" alt="">
+                <div class="pro duct-4" data-aos="fade-left">
                     <h2>Foods</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/diet.png" alt="">
                 </div>
-                <div class="pro duct-5">
-                    <img src="resources/images/electrico.png" alt="">
+                <div class="pro duct-5" data-aos="fade-right">
                     <h2>Electrics</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/electrical-energy.png" alt="">
                 </div>
-                <div class="pro duct-6">
-                    <img src="resources/images/envases.png" alt="">
+                <div class="pro duct-6" data-aos="fade-right">
                     <h2>Packaging</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/food-delivery.png" alt="">
                 </div>
-                <div class="pro duct-7">
-                    <img src="resources/images/salud.png" alt="">
+                <div class="pro duct-7" data-aos="fade-left">
                     <h2>Health</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/healthcare.png" alt="">
                 </div>
-                <div class="pro duct-8">
-                    <img src="resources/images/pesca.png" alt="">
+                <div class="pro duct-8" data-aos="fade-left">
                     <h2>Fishing</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/fishing.png" alt="">
                 </div>
-                <div class="pro duct-9">
-                    <img src="resources/images/construccion.png" alt="">
+                <div class="pro duct-9" data-aos="fade-right">
                     <h2>Construction</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/hook.png" alt="">
                 </div>
-                <div class="pro duct-10">
-                    <img src="resources/images/mineria.png" alt="">
+                <div class="pro duct-10" data-aos="fade-right">
                     <h2>Mining</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/mine.png" alt="">
                 </div>
-                <div class="pro duct-11">
-                    <img src="resources/images/transporte.png" alt="">
+                <div class="pro duct-11" data-aos="fade-left">
                     <h2>Transport</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/delivery-truck.png" alt="">
                 </div>
-                <div class="pro duct-12">
-                    <img src="resources/images/veterinaria.png" alt="">
+                <div class="pro duct-12" data-aos="fade-left">
                     <h2>Veterinary</h2>
+                    <p>We work in this domain</p>
+                    <img src="resources/images/veterinary.png" alt="">
                 </div>
             </div>
             <!-- end -->
-            <hr>
+            <hr style="height: 1.5px;" data-aos="slide-left">
             <!-- quality control -->
             <div class="quality-control" id="quality-control">
-                <div class="quality-control-img">
-                    <img src="resources/images/quality-control-vertical.jpg" alt=""
+                <div class="quality-control-img" data-aos="fade-right">
+                    <img src="resources/images/pexels-sora-shimazaki-5668839.jpg" alt=""
                         class="quality-control-img-vertical">
                     <img src="resources/images/quality-control-horizontal.jpg" alt=""
                         class="quality-control-img-horizontal">
                 </div>
-                <div class="quality-control-text">
+                <div class="quality-control-text" data-aos="fade-left">
                     <h3>OUR MEASURES</h3>
-                    <h1>Quality Control<span>.</span></h1>
+                    <h1>Quality control</h1>
                     <p>Kanatel began its operations more than 50 years ago. Today it has offices in Chile, Colombia,
                         China, Pakistan and Peru; plus the United States and Vietnam with opening in 2021. We also
                         supply the markets of Uruguay, Colombia, Brazil, Central America, USA and Spain. We work on
                         different lines such as: chemicals, steels, plastics, construction, the electrical sector,
                         textiles, food, among others.
 
-                        Our objective is to generate medium and long-term strategic alliances with our clients, in order
+                        Our objective is to generate medium and long-term strategic alliances with our clients, in
+                        order
                         to achieve common goals. With this in mind, we have set up offices in China and trained our
-                        staff based in Asia and South America. The efforts made have paid off since we have become the
+                        staff based in Asia and South America. The efforts made have paid off since we have become
+                        the
                         best sales alternative for Chinese companies in Latin America.</p>
                 </div>
             </div>
             <!-- end -->
-            <hr>
+            <hr style="height: 1.5px;" data-aos="slide-right">
             <!-- our clients -->
             <div class="our-clients" id="our-clients">
-                <h1>Our Clients<span>.</span></h1>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <h1 data-aos="fade-down">Our clients</h1>
+                <div class="cli" data-aos="fade-right">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-right">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-left">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-left">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-right">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-right">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-left">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
-                </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
-                </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
-                </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
-                </div>
-                <div class="cli">
-                    <img src="resources/images/brandlogo-logos-our-brand-32.png" alt="">
+                <div class="cli" data-aos="fade-left">
+                    <img src="resources/images/LOGO.png" alt="">
                 </div>
             </div>
             <!-- end -->
-            <hr>
+            <hr style="height: 1.5px;" data-aos="slide-left">
             <!-- contact us -->
-            <div class="contact-us" id="contact-us">
-                <h1>Contact Us<span>.</span></h1>
+            <div class="contact-us" id="contact-us" data-aos="fade-down">
+                <h1>Contact us</h1>
                 <div class="form">
-                    <img src="resources/images/background-vertical.jpg" alt="">
-                    <form action="">
-                        <input type="text" placeholder="Full Name">
+                    <img src="resources/images/background-vertical.jpg" alt="" class="form-bg-img">
+                    <form action="contact" id="contact-form" method="post" role="form">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" required>
                         <br>
-                        <input type="text" placeholder="Phone Number">
+                        <input type="tel" name="telephone" class="form-control" id="telephone"
+                            placeholder="Phone Number" required>
                         <br>
-                        <input type="email" placeholder="Email">
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                         <br>
-                        <input type="text" placeholder="Message" style="height: 8vw;">
+                        <input class="form-control" name="message" id="message" placeholder="Message"
+                            style="height: 8vw;" required>
                         <div class="button">
-                            <a href="#">
+                            <a href="#" type="submit">
                                 <span>Reach us</span>
                                 <span>Reach us</span>
                             </a>
@@ -349,7 +369,7 @@
 
                     <div class="footer-container">
                         <div class="our-services">
-                            <h1>Our Products</h1>
+                            <h1>Our products</h1>
                             <ul>
                                 <li><a href="#">Chemicals</a></li>
                                 <li><a href="#">Steel</a></li>
@@ -381,6 +401,7 @@
         </div>
         <!-- end -->
     </body>
+    <!-- end -->
     <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -18,14 +18,14 @@ body {
 
 /* disable element selection */
 ::selection {
-    color: none;
-    background: none;
+    color: var(--white);
+    background: var(--yellow);
 }
 
 /* For Mozilla Firefox */
 ::-moz-selection {
-    color: none;
-    background: none;
+    color: var(--white);
+    background: var(--yellow);
 }
 
 /* end */
@@ -319,17 +319,13 @@ hr {
 /* our edge */
 .our-edge {
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .our-edge h1 {
     font-family: 'Maven Pro', sans-serif;
     font-size: 54px;
     text-align: center;
-}
-
-.our-edge h1 span {
-    color: var(--yellow);
 }
 
 .chain-list {
@@ -340,11 +336,11 @@ hr {
 .chain-list hr {
     position: absolute;
     transform: rotate(90deg);
-    margin-top: -120px;
-    margin-left: -149px;
+    margin-top: -125px;
+    margin-left: -85px;
     background-color: var(--light-black);
     height: 1px;
-    width: 400px;
+    width: 270px;
 }
 
 .chain-list span {
@@ -359,7 +355,7 @@ hr {
     position: absolute;
     margin-left: 25px;
     margin-top: 20px;
-    z-index: 99;
+    z-index: 99999;
     width: 50px;
 }
 
@@ -375,7 +371,7 @@ hr {
     display: block;
     margin: auto;
     width: 100px;
-    margin-top: -1770px;
+    margin-top: -1063px;
 }
 
 .chain-list div:nth-child(2) span {
@@ -385,40 +381,40 @@ hr {
 .list-items {
     position: absolute;
     width: 250px;
-    margin-top: -1510px;
+    margin-top: -1157px;
     margin-left: 12vw;
 }
 
 .two {
     position: absolute;
     width: 300px;
-    margin-top: -1510px;
+    margin-top: -1157px;
     margin-left: 52.5vw;
 }
 
 .list-items div:nth-child(2) {
-    margin-top: 212px;
+    margin-top: 210px;
 }
 
 .list-items div:nth-child(3) {
-    margin-top: 160px;
+    margin-top: 150px;
 }
 
 .list-items div:nth-child(4) {
-    margin-top: 175px;
+    margin-top: 170px;
 }
 
 .two div:nth-child(2) {
-    margin-top: 120px;
+    margin-top: 115px;
 }
 
 .two div:nth-child(3) {
-    margin-top: 108px;
+    margin-top: 95px;
 }
 
 .list-items h2 {
     font-family: 'Maven Pro', sans-serif;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .list-items p {
@@ -446,18 +442,19 @@ hr {
 }
 
 .products .pro {
-    background-color: var(--light-black);
-    border: 1px solid var(--light-black);
+    background-color: var(--white);
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 20px 0px rgb(230, 230, 230);
     border-radius: 10px;
     width: 250px;
-    height: 350px;
+    height: 250px;
     display: inline-block;
     margin: 15px;
 }
 
 .products .pro img {
-    width: 100.7%;
-    margin-left: -1px;
+    width: 30%;
+    margin-left: 130px;
     margin-top: -0.5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -465,7 +462,17 @@ hr {
 
 .products .pro h2 {
     font-family: 'Maven Pro', sans-serif;
-    color: var(--white);
+    color: var(--light-black);
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.products .pro p {
+    font-family: 'Maven Pro', sans-serif;
+    color: grey;
+    text-align: left;
+    margin-left: 25px;
 }
 
 /* end */
@@ -479,6 +486,7 @@ hr {
 .quality-control-img-vertical {
     display: block;
     width: 350px;
+    height: 520px;
     border-radius: 10px;
 }
 
@@ -544,7 +552,7 @@ hr {
 }
 
 .our-clients .cli img {
-    width: 80%;
+    width: 70%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -581,10 +589,13 @@ hr {
 }
 
 .form img {
-    width: 35.15vw;
+    width: 35.12vw;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    filter: brightness(0.5);
+}
+
+.form-bg-img {
+    filter: brightness(0.4);
 }
 
 form {
@@ -609,6 +620,7 @@ form input {
     width: 28vw;
     margin-top: 50px;
     padding-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 form input::placeholder {
@@ -617,6 +629,38 @@ form input::placeholder {
 
 .form .button {
     top: 3vw;
+}
+
+.address {
+    position: absolute;
+    top: 10%;
+    margin-left: 50px;
+    margin-left: 5vw;
+}
+
+.address p {
+    font-family: 'Maven Pro', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    text-shadow: 2px 2px 6px var(--dark-black);
+}
+
+.address p a {
+    font-family: 'Maven Pro', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    text-shadow: 2px 2px 6px var(--dark-black);
+}
+
+.address img {
+    width: 4vw;
+    text-shadow: 2px 2px 6px var(--dark-black);
 }
 
 /* end */
@@ -628,7 +672,7 @@ form input::placeholder {
     transform: translate(-50%, -50%);
     background-color: #151414;
     height: 500px;
-    width: 101%;
+    width: 100%;
     margin-top: 400px;
     font-family: 'Maven Pro', sans-serif;
 }
@@ -775,6 +819,24 @@ form input::placeholder {
     color: white;
 }
 
+.back-to-top {
+    background-color: var(--dark-black);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: -50px;
+    margin-right: 25px;
+    float: right;
+    cursor: pointer;
+}
+
+.back-to-top img {
+    width: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
 /* end */
 
 /* media queries */
@@ -789,7 +851,7 @@ form input::placeholder {
         position: absolute;
         background-color: #151414;
         height: 1200px;
-        width: 100.5%;
+        width: 100%;
         margin-top: 600px;
     }
 
@@ -805,7 +867,7 @@ form input::placeholder {
         position: absolute;
         margin-left: 95px;
         margin-top: 160px;
-        text-align: center;
+        text-align: left;
     }
 
     .our-services ul {
@@ -814,9 +876,9 @@ form input::placeholder {
 
     .other-links {
         position: absolute;
-        margin-left: 90px;
+        margin-left: 100px;
         margin-top: 500px;
-        text-align: center;
+        text-align: left;
     }
 
     .other-links ul {
@@ -1001,10 +1063,10 @@ form input::placeholder {
         position: absolute;
         transform: rotate(90deg);
         margin-top: -127px;
-        margin-left: -149px;
+        margin-left: -110px;
         background-color: var(--light-black);
         height: 1px;
-        width: 350px;
+        width: 270px;
     }
 
     .chain-list span img {
@@ -1018,20 +1080,20 @@ form input::placeholder {
     .list-items {
         position: absolute;
         width: 250px;
-        margin-top: -1642px;
+        margin-top: -1035px;
         margin-left: 80px;
     }
 
     .list-items div:nth-child(2) {
-        margin-top: 163px;
+        margin-top: 160px;
     }
 
     .list-items div:nth-child(3) {
-        margin-top: 107px;
+        margin-top: 105px;
     }
 
     .list-items div:nth-child(4) {
-        margin-top: 128px;
+        margin-top: 124px;
     }
 
     .chain-list div:nth-child(2) {
@@ -1043,7 +1105,7 @@ form input::placeholder {
     .two {
         position: absolute;
         width: 250px;
-        margin-top: -455px;
+        margin-top: -150px;
         margin-left: 80px;
     }
 
@@ -1052,11 +1114,15 @@ form input::placeholder {
     }
 
     .two div:nth-child(2) {
-        margin-top: -6px;
+        margin-top: -15px;
     }
 
     .two div:nth-child(3) {
-        margin-top: 32px;
+        margin-top: 30px;
+    }
+
+    .hidden {
+        display: none;
     }
 }
 
@@ -1102,6 +1168,10 @@ form input::placeholder {
 
     .form .button {
         top: 5vw;
+    }
+
+    .address {
+        display: none;
     }
 }
 
